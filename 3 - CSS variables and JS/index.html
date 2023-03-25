@@ -4,40 +4,7 @@
     <meta charset="UTF-8" />
     <title>Scoped CSS Variables and JS</title>
     <script defer src="index.js"></script>
-    <style>
-      :root {
-        --blur: 10px;
-        --spacing: 10px;
-        --base: #ffc680;
-      }
-
-      img {
-        background: var(--base);
-        padding: var(--spacing);
-        filter: blur(var(--blur));
-      }
-
-      .hl {
-        color: var(--base);
-      }
-
-      body {
-        text-align: center;
-        background: #193549;
-        color: white;
-        font-family: "helvetica neue", sans-serif;
-        font-weight: 100;
-        font-size: 50px;
-      }
-
-      .controls {
-        margin-bottom: 50px;
-      }
-
-      input {
-        width: 100px;
-      }
-    </style>
+    <link rel="stylesheet" href="index.css" />
   </head>
   <body>
     <h2>Update CSS Variables with <span class="hl">JS</span></h2>
